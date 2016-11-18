@@ -1,2 +1,2 @@
 # angular-seed
-Seed for AngularJS
+Angular seed.
