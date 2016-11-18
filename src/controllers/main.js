@@ -1,19 +1,17 @@
 'use strict';
 
-app.controller('TodoListController', function () {
-        var todoList = this;
-        todoList.todos = [
-            { text: 'learn angular', done: true },
-            { text: 'build an angular app', done: false }];
+app.controller('TodoListController', function ($scope, todosProvider) {
+       
+         $scope.todos = todosProvider.getTodos();
 
-        todoList.addTodo = function () {
-            todoList.todos.push({ text: todoList.todoText, done: false });
-            todoList.todoText = '';
+         $scope.addTodo = function () {
+             $scope.todos.push({ text:  $scope.todoText, done: false });
+             $scope.todoText = '';
         };
 
-        todoList.remaining = function () {
+         $scope.remaining = function () {
             var count = 0;
-            angular.forEach(todoList.todos, function (todo) {
+            angular.forEach( $scope.todos, function (todo) {
                 count += todo.done ? 0 : 1;
             });
             return count;
