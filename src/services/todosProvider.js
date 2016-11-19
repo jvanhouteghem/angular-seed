@@ -1,8 +1,8 @@
 'use strict';
 
 var todos = [
-    { text: 'learn angular', done: true },
-    { text: 'build an angular app', done: false }
+    { 'id' : 0, text: 'learn angular', done: true },
+    { 'id' : 1, text: 'build an angular app', done: false }
 ];
 
 app.service('todosProvider', function () {
