@@ -2,6 +2,7 @@
 
 app
     .controller('TodoListController', function ($scope, todosProvider) {
+        
         // ----- Call provider -----
         $scope.addTodo = function () {
             todosProvider.addTodo($scope.getMaxTodoId() + 1, $scope.todoText, false);
@@ -33,6 +34,7 @@ app
             return count;
         };
     })
+    
     .controller('todoCreate', function ($scope, categoryProvider) {
         $scope.categories = categoryProvider.getCategories();
     })
