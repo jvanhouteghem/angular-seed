@@ -3,8 +3,6 @@
 Controllers
 ---
 
-NB : Try to use one controller by view. 
-
 ###A. How to add a new controller ?
 
 - 1. Create new controller file in src/controllers/yourController.js
