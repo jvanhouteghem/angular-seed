@@ -6,8 +6,7 @@ Controllers
 ###A. How to add a new controller ?
 
 - 1. Create new controller file in src/controllers/yourController.js
-- 2. Add this new controller in index.html
-- 3. Add following code : 
+- 2. Add following code in yourController : 
 ```js
     App.controller('yourController', function ($scope, myItemProvider){
         
@@ -15,6 +14,7 @@ Controllers
         
     });
 ```
+- 3. Import this new controller in index.html
 - 4. Update routing.js by adding a new ".when{...}" : 
 ```
     .when('/yourRoute', {

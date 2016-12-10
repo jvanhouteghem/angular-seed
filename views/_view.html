@@ -4,6 +4,13 @@
 
 	<p>List from itemProvider : {{this.items}}</p>
 
+	<ul>
+		<li ng-repeat="item in this.items">
+			<input type="checkbox" ng-model="item.done">
+			<span class="done-{{item.done}}">{{item.id}} {{item.text}}</span>
+		</li>
+	</ul>
+
 	<form ng-submit=" this.addItem()">
 		<input type="text" ng-model="this.inputTextItem" size="30" placeholder="Add new item here">
 		<input class="btn-primary" type="submit" value="add">
