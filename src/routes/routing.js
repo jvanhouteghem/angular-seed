@@ -5,16 +5,8 @@ app.config(
         $routeProvider
             // default route
             .when('/', {
-                controller: 'TodoListController as todoList',
-                templateUrl: 'views/_todolist.html'
-            })
-            .when('/items/', {
-                controller: 'TodoListController as todoList',
-                templateUrl: 'views/_todolist.html'
-            })
-            .when('/items/new/', {
-                controller: 'todoCreate',
-                templateUrl: 'views/_todocreate.html'
+                controller: 'myController',
+                templateUrl: 'views/_view.html'
             })
     }
 );

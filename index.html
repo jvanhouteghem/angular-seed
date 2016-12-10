@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="todoApp">
+<html>
 
 <head>
 	<script src="vendor/node_modules/angular/angular.min.js"></script>
@@ -11,16 +11,17 @@
 	<script src="src/controllers/main.js"></script>
 	
 	<!-- Services -->
-	<script src="src/services/todosProvider.js"></script>
-	<script src="src/services/categoryProvider.js"></script>
+	<script src="src/services/itemProvider.js"></script>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="ressources/css/styles.css">
 </head>
 
-<body>
-	<h2>Todo</h2>
+<body ng-app="todoApp">
+
+	<h2>Welcome</h2>
 	<div ng-view></div>
+	
 </body>
 
 </html>
