@@ -9,7 +9,9 @@ With directives you can use templating, or add new fonctionnality to html.
 ###B. How to add a new directive template ?
 
 1) Create new html file in views/templates
+
 2) Update the file, for example write "test directive".
+
 3) Update src/directives/directive.js by addin new directive code : 
 
 ```js
