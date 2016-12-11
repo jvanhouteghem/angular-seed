@@ -12,7 +12,6 @@ app
 
         // Update data item from service itemsProvider
         $scope.addItem = function () {
-            console.log("addItem from myController");
             myItemProvider.addItem(0, $scope.inputTextItem, false);
             // Clean input text
             $scope.inputTextItem = '';

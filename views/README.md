@@ -14,12 +14,6 @@ Example :
 
 ###B. ng repeat example ?
 
-The object in intemProvider :
-
-```js
-
-```
-
 The controller : 
 
 ```js

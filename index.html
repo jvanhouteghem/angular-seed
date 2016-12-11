@@ -1,27 +1,31 @@
 <!doctype html>
 <html>
 
-<head>
-	<script src="vendor/node_modules/angular/angular.min.js"></script>
-    <script src="vendor/node_modules/angular-route/angular-route.min.js"></script>
-	<script src="src/app.js"></script>
-	<script src="src/routes/routing.js"></script>
+	<head>
+		<script src="vendor/node_modules/angular/angular.min.js"></script>
+		<script src="vendor/node_modules/angular-route/angular-route.min.js"></script>
+		<script src="src/app.js"></script>
+		<script src="src/routes/routing.js"></script>
 
-	<!-- Controllers -->
-	<script src="src/controllers/main.js"></script>
-	
-	<!-- Services -->
-	<script src="src/services/itemProvider.js"></script>
+		<!-- Controllers -->
+		<script src="src/controllers/controller.js"></script>
+		
+		<!-- Services -->
+		<script src="src/services/itemProvider.js"></script>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="ressources/css/styles.css">
-</head>
+		<!-- Directives -->
+		<script src="src/directives/directive.js"></script>
 
-<body ng-app="todoApp">
+		<!-- CSS -->
+		<link rel="stylesheet" href="ressources/css/styles.css">
 
-	<h2>Welcome</h2>
-	<div ng-view></div>
-	
-</body>
+	</head>
+
+	<body ng-app="myApp">
+
+		<h2>Welcome</h2>
+		<div ng-view></div>
+		
+	</body>
 
 </html>
